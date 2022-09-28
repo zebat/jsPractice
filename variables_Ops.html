@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="variables_Ops.css" />
+    <title>Variable and Operations</title>
+  </head>
+  <body>
+    <!-- 1st Div -->
+    <div class="nav_bar">
+      <ul>
+        <li><a href="#">Variable</a></li>
+        <li><a href="#">Function</a></li>
+      </ul>
+    </div>
+    <!-- 2nd div  -->
+    <div id="container">
+      <div id="title_header">
+        <h1 id="page_title">Javascript (JS)</h1>
+        <p id="js_intro">
+          JavaScript, often abbreviated to JS, is a programming language that is
+          one of the core technologies of the World Wide Web, alongside HTML and
+          CSS. As of 2022, 98% of websites use JavaScript on the client side for
+          webpage behavior, often incorporating third-party libraries.
+        </p>
+      </div>
+      <div id="var_ops">
+        <h3 id="var_ops_title">Variables & Operations</h3>
+        <ol>
+          <li id="var_ops_1">
+            Click the button to calculate sum, multiply, modulus within one
+            function only. Alert one after the other.
+            <button class="var_ops_button" onclick="var_ops_1()">
+              Click Me
+            </button>
+            <pre id="var_ops_li_pre1">
+                function var_ops_1(){
+                    var a = parseInt(prompt('Enter First Number'));
+                    var b = parseInt(prompt('Enter Second Number'));   
+                    var c = a + b;
+                    var d = a * b;
+                   alert("Addition of " + a + " + " + b + " = " + c);
+                   alert("Multiplication of " + a + " * " + b + " = " + d);
+                   document.getElementById("var_ops_li_pre1").style.display = 'block';
+                };                               
+            </pre>
+          </li>
+          <li id="var_ops_2">
+            Click the button to calculate which will capture return values from
+            independent functions - sum, multiply, modulus.
+            <!-- <button class="var_ops_button" onclick="var_ops_2()">
+              Click Me
+            </button> -->
+            <pre id="var_ops_li_pre2" style="display: none;"></pre>
+          </li>
+          <li id="var_ops_3">
+            Click the button to calculate which will capture return values from
+            independent functions - sum, multiply, modulus.
+            <pre id="var_ops_li_pre3" style="display: none;"></pre>
+          </li>
+          <li>
+            What are global and local variables? Write a program to demonstrate
+            global and local variables.
+          </li>
+        </ol>
+      </div>
+    </div>
+    <script src="./variables_Ops.js"></script>
+  </body>
+</html>
