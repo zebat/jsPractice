@@ -11,8 +11,10 @@
     <!-- 1st Div -->
     <div class="nav_bar">
       <ul>
-        <li><a href="#">Variable</a></li>
-        <li><a href="#">Function</a></li>
+        <li><a href="index.html">HTML</a></li>
+        <li><a href="css_questions.html">CSS</a></li>
+        <li><a href="variables_Ops.html">Variable</a></li>
+        <li><a href="function.html">Function</a></li>
       </ul>
     </div>
     <!-- 2nd div  -->
@@ -35,7 +37,7 @@
             <button class="var_ops_button" onclick="var_ops_1()">
               Click Me
             </button>
-            <pre id="var_ops_li_pre1">
+            <pre class="var_ops_li_pre" id="var_ops_li_pre1">
                 function var_ops_1(){
                     var a = parseInt(prompt('Enter First Number'));
                     var b = parseInt(prompt('Enter Second Number'));   
@@ -50,20 +52,246 @@
           <li id="var_ops_2">
             Click the button to calculate which will capture return values from
             independent functions - sum, multiply, modulus.
-            <!-- <button class="var_ops_button" onclick="var_ops_2()">
+            <button class="var_ops_button" onclick="var_ops_2()">
               Click Me
-            </button> -->
-            <pre id="var_ops_li_pre2" style="display: none;"></pre>
+            </button>
+            <pre class="var_ops_li_pre" id="var_ops_li_pre2">
+              function var_ops_2add(){
+                var a = parseInt(prompt('Enter First Number'));
+                var b = parseInt(prompt('Enter Second Number'));   
+                var c = a + b;
+                alert("Addition of " + a + " + " + b + " = " + c);
+            };
+            
+            function var_ops_2multiply(){
+                var a = parseInt(prompt('Enter First Number'));
+                var b = parseInt(prompt('Enter Second Number'));   
+                var c = a * b;
+                alert("Multiplication of " + a + " * " + b + " = " + c);
+            };
+            
+            function var_ops_2module(){  
+                var a = parseInt(prompt('Enter First Number'));
+                var b = parseInt(prompt('Enter Second Number'));
+                var c = a % b;
+                alert("Module of " + a + " % " + b + " = " + c);
+            };
+            
+            function var_ops_2(){
+                var_ops_2add();
+                var_ops_2multiply();
+                var_ops_2module();
+                document.getElementById("var_ops_li_pre2").style.display = 'block';
+            };
+            </pre>
           </li>
           <li id="var_ops_3">
             Click the button to calculate which will capture return values from
             independent functions - sum, multiply, modulus.
-            <pre id="var_ops_li_pre3" style="display: none;"></pre>
+            <button class="var_ops_button" onclick="var_ops_3()">
+              Click Me
+            </button>
+            <pre class="var_ops_li_pre" id="var_ops_li_pre3">
+              function var_ops_3add(a, b) {
+                return a + b;
+              }
+              function var_ops_3multiply(a, b) {
+                return a * b;
+              }
+              function var_ops_3module(a, b) {
+                return a % b;
+              }
+              function var_ops_3() {
+                var a = parseInt(prompt("Enter First Number"));
+                var b = parseInt(prompt("Enter Second Number"));
+                alert("Addition = " + var_ops_3add(a, b));
+                alert("Multiplication = " + var_ops_3multiply(a, b));
+                alert("Module = " + var_ops_3module(a, b));
+              };
+            </pre>
           </li>
-          <li>
+          <li id="var_ops_4">
             What are global and local variables? Write a program to demonstrate
             global and local variables.
+            <button class="var_ops_button" onclick="var_ops_4()">
+              Click Me
+            </button>
           </li>
+          <p class="var_ops_answers">
+            A global variable is a variable that is accessible globally. A local
+            variable is one that is only accessible to the current scope, such
+            as temporary variables used in a single function definition
+          </p>
+          <pre class="var_ops_li_pre" id="var_ops_li_pre4">
+            var a = 10;
+            var b = 30;
+            function testGlobal() {
+              var a = 1;
+              var b = 3;
+              document.getElementById("var_ops_li_pre4").style.display = "block";
+              return c = (alert("a = " + a + ", b = " + b));
+            }
+          </pre>
+          <li id="var_ops_5">
+            Have two global variables and two local variables and calculate sum,
+            multiply, modulus
+            <button class="var_ops_button" onclick="var_ops_5()">
+              Click Me
+            </button>
+          </li>
+          <pre class="var_ops_li_pre" id="var_ops_li_pre5">
+
+// Global Variable 
+var a = 40;
+var b = 70;
+
+function var_ops_5() {
+ 
+  // Local Variable 
+  var a = 4;
+  var b = 7;
+  var c = a + b;
+  var d = a * b;
+  var e = a % c;
+  document.getElementById("var_ops_li_pre5").style.display = "block";
+  return alert(
+    "a = " +
+      a +
+      "\n" +
+      "b = " +
+      b +
+      "\n" +
+      "a + b = " +
+      c +
+      "\n" +
+      "a * b = " +
+      d +
+      "\n" +
+      "a % b = " +
+      e
+  );
+};
+          </pre>
+          <li id="var_ops_6" onclick="var_ops_6()">
+            Have 5 buttons with different functions, use different operators.
+            <p>
+              <button class="var_ops_button" onclick="var_ops_2add()">
+                Button 1
+              </button>
+              <button class="var_ops_button" onclick="var_ops_2multiply()">
+                Button 2
+              </button>
+              <button class="var_ops_button" onclick="var_ops_2module()">
+                Button 3
+              </button>
+              <button class="var_ops_button" onclick="var_ops_6subract()">
+                Button 4
+              </button>
+              <button class="var_ops_button" onclick="var_ops_2divide()">
+                Button 5
+              </button>
+            </p>
+          </li>
+          <pre class="var_ops_li_pre" id="var_ops_li_pre6">
+            function var_ops_2add() {
+              var a = parseInt(prompt("Enter First Number"));
+              var b = parseInt(prompt("Enter Second Number"));
+              var c = a + b;
+              alert("Addition of " + a + " + " + b + " = " + c);
+            }
+            
+            function var_ops_2multiply() {
+              var a = parseInt(prompt("Enter First Number"));
+              var b = parseInt(prompt("Enter Second Number"));
+              var c = a * b;
+              alert("Multiplication of " + a + " * " + b + " = " + c);
+            }
+            
+            function var_ops_2module() {
+              var a = parseInt(prompt("Enter First Number"));
+              var b = parseInt(prompt("Enter Second Number"));
+              var c = a % b;
+              alert("Module of " + a + " % " + b + " = " + c);
+            }
+            function var_ops_6subract() {
+              var a = parseInt(prompt("Enter First Number"));
+              var b = parseInt(prompt("Enter Second Number"));
+              var c = a - b;
+              alert("Subraction of " + a + " - " + b + " = " + c);
+            }
+            
+            function var_ops_2divide() {
+              var a = parseInt(prompt("Enter First Number"));
+              var b = parseInt(prompt("Enter Second Number"));
+              var c = a / b;
+              alert("Divition of " + a + " / " + b + " = " + c);
+            }          
+          </pre>
+          <li id="var_ops_7">
+            Have two global variables a and b.
+            <ul>
+              <li>
+                Have a function add( ), Increment the value of a first and then
+                calculate the sum of a and b.
+              </li>
+              <button class="var_ops_button">Check Console</button>
+              <li>
+                Have a function sub( ), Decrement the value of a first and then
+                alert a-b.
+              </li>
+              <button class="var_ops_button">Check Console</button>
+              <li>
+                Have a function multiply( ), Give a local variable a = 10 and
+                then calculate the sum, subtract, divide, multiply and modulus.
+              </li>
+              <button class="var_ops_button" onclick="var_ops_7()">
+                Click Me
+              </button>
+              <pre class="var_ops_li_pre" id="var_ops_li_pre7">
+                var a = 30;
+                a++;
+                var b = 20;
+                function add() {
+                  console.log(a + b);
+                }
+                add();
+                a--;
+                function sub() {
+                  console.log(a - b);
+                }
+                sub();
+                function multiply() {
+                  var a = 10;
+                  console.log(a + b, +a - b, a / b, a * b, a % b);
+                }
+                multiply();
+              </pre>
+            </ul>
+          </li>
+          <li id="var_ops_8">
+            Write a program to convert Fahrenheit temperature to Celsius.
+            Formula is : C = (F - 32) * 5/9
+          </li>
+          <button class="var_ops_button" onclick="var_ops_8()">Click Me</button>
+          <pre class="var_ops_li_pre" id="var_ops_li_pre8">
+            function var_ops_8(){
+              var fahrenheit = parseInt(prompt("Enter the Fahrenheit"))
+              var celsius = (fahrenheit -32) * 5/9
+              alert(celsius+'\xB0C.')
+              document.getElementById("var_ops_li_pre8").style.display = "block";
+          }
+          </pre>
+          <li>
+            How would you show the following output in alert boxes?
+            <ul>
+              <li>a. The name is set as : Bruce</li>
+              <li>b. Name is displayed as : Wayne</li>
+            </ul>
+            <button class="var_ops_button" onclick="var_ops_9()">Click Me</button>
+          </li>
+          <pre class="var_ops_li_pre" id="var_ops_li_pre9">
+            
+          </pre>
         </ol>
       </div>
     </div>

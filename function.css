@@ -1,0 +1,42 @@
+body {
+    font-family: "Optima, sans-serif";
+    font-size: larger;
+    padding: 0;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/005/909/851/original/programming-code-icon-3d-low-polygonal-abstract-programming-code-symbol-coding-or-hacker-background-development-and-software-concept-illustration-vector.jpg");
+    background-repeat: none;
+    background-size: cover;
+    color: aliceblue;
+  }
+  /* 1st Div */
+  .nav_bar {
+    width: 100%;
+    margin: 0;
+    height: 60px;
+    background: radial-gradient(
+      circle,
+      rgb(63, 166, 251) 0%,
+      rgb(252, 70, 252) 100%
+    );
+  }
+  .nav_bar ul {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+  }
+  .nav_bar ul li {
+    display: inline-block;
+    padding: 10px;
+    font-size: x-large;
+    margin-top: 2px;
+    margin-left: 20px;
+    letter-spacing: 0.2rem;
+    font-weight: bold;
+  }
+  .nav_bar ul li a {
+    text-decoration: none;
+    color: whitesmoke;
+  }
+  .nav_bar ul li a:hover {
+    border-bottom: 2px double whitesmoke;
+  }
+  

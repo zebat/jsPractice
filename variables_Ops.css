@@ -1,13 +1,11 @@
-
-body{
-    font-family: "Optima, sans-serif";
-    font-size: larger;
-    padding: 0;
-    background-image: url('https://static.vecteezy.com/system/resources/previews/005/909/851/original/programming-code-icon-3d-low-polygonal-abstract-programming-code-symbol-coding-or-hacker-background-development-and-software-concept-illustration-vector.jpg');
-    background-repeat: none;
-    background-size: cover;
-    color: aliceblue;
-
+body {
+  font-family: "Optima, sans-serif";
+  font-size: larger;
+  padding: 0;
+  background-image: url("https://static.vecteezy.com/system/resources/previews/005/909/851/original/programming-code-icon-3d-low-polygonal-abstract-programming-code-symbol-coding-or-hacker-background-development-and-software-concept-illustration-vector.jpg");
+  background-repeat: none;
+  background-size: cover;
+  color: aliceblue;
 }
 /* 1st Div */
 .nav_bar {
@@ -35,57 +33,64 @@ body{
   font-weight: bold;
 }
 .nav_bar ul li a {
-    text-decoration: none;
-    color: whitesmoke;
+  text-decoration: none;
+  color: whitesmoke;
 }
 .nav_bar ul li a:hover {
-border-bottom: 2px double whitesmoke;
+  border-bottom: 2px double whitesmoke;
 }
 /* 2nd div */
-#container{
-    padding: 2%;
-    margin-top: 2%;
-    background-color: rgba(0, 0, 0, 0.548);
-
+#container {
+  padding: 2%;
+  margin-top: 2%;
+  background-color: rgba(0, 0, 0, 0.548);
 }
 #page_title {
   display: block;
   font-style: italic;
   text-decoration: underline rgba(252, 93, 125, 0.806);
 }
-#js_intro{
-    text-align: left;
-    padding: 5px;
+#js_intro {
+  text-align: left;
+  padding: 5px;
 }
-#var_ops{
-}
-div#var_ops ol li{
-    line-height: 2rem;
-    padding: 1%;
+
+div#var_ops ol li {
+  line-height: 2rem;
+  padding: 1%;
 }
 #var_ops_title {
-    font-style: italic;
-    text-decoration: underline rgba(252, 93, 125, 0.806);
+  font-style: italic;
+  text-decoration: underline rgba(252, 93, 125, 0.806);
 }
-.var_ops_button{
-    margin-left: 10px;
-    border-radius: 15px;
-    padding: 10px;
-    background: radial-gradient(
-        circle,
-        rgba(63, 94, 251, 1) 0%,
-        rgba(252, 70, 107, 1) 100%
-      );
-      color: whitesmoke;
-    border: none;
-    cursor: pointer;
-    }
-#var_ops_li_pre1{
-    background-color: rgba(250, 235, 215, 0.685);
-    color: black;
-    border-radius: 3px;
-    padding: 2%;
-    font-size: larger;
-    font-weight: bolder;
-    display: none;
+.var_ops_button {
+  margin-left: 10px;
+  border-radius: 15px;
+  padding: 10px;
+  background: radial-gradient(
+    circle,
+    rgba(63, 94, 251, 1) 0%,
+    rgba(252, 70, 107, 1) 100%
+  );
+  color: whitesmoke;
+  border: none;
+  cursor: pointer;
+}
+.var_ops_li_pre {
+  background-color: rgba(250, 235, 215, 0.685);
+  color: black;
+  border-radius: 3px;
+  padding: 2%;
+  font-size: larger;
+  font-weight: bolder;
+  display: none;
+}
+.var_ops_answers {
+  margin-top: 0;
+  background-color: rgba(250, 235, 215, 0.685);
+  color: black;
+  border-radius: 3px;
+  padding: 2%;
+  font-size: large;
+  font-weight: bolder;
 }
