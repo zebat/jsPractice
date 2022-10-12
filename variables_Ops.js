@@ -124,17 +124,17 @@ var a = 30;
 a++;
 var b = 20;
 function add() {
-  console.log(a + b);
+  //console.log(a + b);
 }
 add();
 a--;
 function sub() {
-  console.log(a - b);
+  // console.log(a - b);
 }
 sub();
 function multiply() {
   var a = 10;
-  console.log(a + b, +a - b, a / b, a * b, a % b);
+ // console.log(a + b, +a - b, a / b, a * b, a % b);
 }
 multiply();
 function var_ops_7() {
@@ -159,7 +159,7 @@ function var_ops_9() {
 var str = "variable";
 str == str.split(" ").reverse()
 
-console.log(str)
+// console.log(str)
 
 var str = function isPalindrome(string) {
     if (string == string.split('').reverse().join('')) {

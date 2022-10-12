@@ -140,42 +140,90 @@ function findDay() {
     "Saturday",
     "Sunday",
   ];
-  console.log(input);
-  for (let i = 0; i <= weekArr.length; i++) {
-    if (weekArr[i] == input) {
-      let arrIndex = weekArr.indexOf(weekArr[i]);
-      for(let j = arrIndex; j<weekArr.length; j++){
-         console.log(arrIndex);
-         var newArr = [];
-         console.log(weekArr[j])
-         newArr.push[weekArr[j]]
-         return console.log(newArr)
+  var arrIndex = weekArr.indexOf(input);
+  for (let i = arrIndex; i <= weekArr.length; i++) {
+    if (input == "Sunday") {
+      console.log("it is the last day of the week!");
+    } else{
+      console.log(weekArr[i])
+    } 
+  }
+}
+
+// findDay();
+//============================================================
+// Question 8 
+
+//  Ask for a prompt, 
+// if I enter ‘Monday’, in console display 
+// ‘Tuesday’,’Wednesday’,’Thursday’,’Friday’,‘Saturday’ ,’Sunday’and ‘Monday’.
+// When I enter ‘Tuesday’, in console display 
+// ’Wednesday’,’Thursday’,’Friday’,‘Saturday’ ,’Sunday’ ‘Monday’ and ‘Tuesday’.
+// When I enter ‘Wednesday’, in console display 
+// ’Thursday’,’Friday’,‘Saturday’ ,’Sunday’, ‘Monday’,’Tuesday’ and ‘Wednesday’.
+// When I enter ‘Thursday’, in console display 
+// ’Friday’,‘Saturday’ ,’Sunday’,‘Monday’, ‘Tuesday’ and ‘Wednesday’.
+// When I enter ‘Friday’, in console display 
+// ‘Saturday’ ,’Sunday’,‘Monday’, ‘Tuesday’ ,‘Wednesday’,’Thursday’ and ‘Friday’.
+// When I enter ‘Saturday’, in console display 
+// ‘Sunday’,‘Monday’, ‘Tuesday’ ,‘Wednesday’,’Thursday’ and ‘Friday’ and ‘Saturday’.
+// When I enter ‘Sunday’, in console display 
+// ‘Monday’, ‘Tuesday’ ,‘Wednesday’,’Thursday’, ‘Friday’and ‘Saturday’.
+function findAllDays() {
+  var input = prompt("Enter current day of the week");
+  var weekArr = [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+  ];
+  var arrIndex = weekArr.indexOf(input);
+  var newArr = []
+  for (let i = arrIndex; i < weekArr.length; i++) {
+    newArr.push(weekArr[i])
+  } for(let i=0; i<arrIndex; i++){
+    newArr.push(weekArr[i])
+    } console.log(newArr)
+}
+
+ findAllDays();
+
+ function find_all_color() {
+  var input = prompt("Enter any color");
+  var colorArr = ['yellow', 'red','green', 'blue','white','orange', 'black']
+  var arrIndex = colorArr.indexOf(input);
+  var newArr = []
+  console.log(colorArr)
+  for (let i = arrIndex; i <colorArr.length; i++) {
+    newArr.push(colorArr[i])
+    } for(let j=0; j<arrIndex; j++){
+      newArr.push(colorArr[j])
+    }    console.log(newArr)
+}
+
+ // find_all_color();
+//=========================================================================
+// Question 10
+
+// Create two arrays, for every match between the 2 arrays,
+// display an alert ‘there is a match’.
+
+function matchArray() {
+  var a = [1, 2, 3, 4];
+  var b = [2, 43, 6, 3];
+  for (let i = 0; i <= a.length; i++) {
+    for (let j = 0; j < b.length; j++) {
+      if (a[i] == b[j]) {
+        console.log("Its a Match");
+        console.log(a[i]);
+      } else {
+        console.log("Its not a Match");
       }
     }
   }
-  return console.log("No match");
-}
-
-//findDay();
-//============================================================
-// Question 10
-
-// Create two arrays, for every match between the 2 arrays, 
-// display an alert ‘there is a match’.
-
-function matchArray(){
-    var a = [ 1,2,3,4]
-    var b = [ 2,43,6,3]
-    for(let i=0; i<=a.length; i++){
-        for(let j = 0; j<b.length; j++){
-            if(a[i] == b[j]){
-              console.log("Its a Match")
-              console.log(a[i])
-            } else{
-              console.log("Its not a Match")
-            }
-        }
-    } 
 }
 
 // matchArray()
