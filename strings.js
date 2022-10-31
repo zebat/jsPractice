@@ -1,12 +1,14 @@
 //=====================================================
 // Question 4
-// Write a program to return the length of a string
+// Write a program to return the length of a string and also reverse
 //"Pneumonoultramicroscopicsilicovolcanoconiosis".
 
 var str = "Pneumonoultramicroscopicsilicovolcanoconiosis";
 
 function strLength(ab) {
-  return console.log(ab.length);
+  var lenOfStr = ab.length
+  var reveStr = ab.split('').reverse().join('')
+  console.log( lenOfStr + " " + reveStr)
 }
 
 // strLength(str);
@@ -48,8 +50,21 @@ function find_Next_Previous(){
       console.log(c)
     }
   }
-
+ 
 }
 
 // find_Next_Previous();
+
+// ===============================================================================
+
+//Question 11. 
+// There is a link: http://www.pro-tekconsulting.com/main/navigate/about&us/contactus/email/yourinfo.jsp
+// a. Alert- ‘contact us’
+// b. Alert- ‘your info’
+// c. Have two text fields- Replace ‘navigate’ , ‘contact’ with whatever the user enters in the text
+// field and hits ‘submit’
+// d. Have 3 text fields- whatever you enter in those text fields should replace ‘prompt1’,’prompt2’
+// and prompt3’.Then ‘alert’ that. After 3rd alert, the whole new link should come up.
+// http://www.pro-tekconsulting.com/main/navigate/about&us/contactus/email/firstname=prompt1 & lastname=prompt&ph_no=prompt3”
+
 

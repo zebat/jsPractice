@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="dom.css" />
+    <title>DOM Assignment</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="para">
+        Hi, This is a Para 1
+        <button class="question_button" onclick="ques_1()">Click Me</button>
+      </div>
+      <div class="para">
+        Hello !!!
+        <button class="question_button" id="para2" onclick="color_Change()">
+          Click Me
+        </button>
+      </div>
+      <div class="para">
+        Exchange Box
+        <p>
+          <input class="input_box" type="text" id="text_value_1" />
+          <button class="question_button" onclick="exchange_Text_1()">
+            Click Me
+          </button>
+        </p>
+        <p>
+          <input class="input_box" type="text" id="text_value_2" />
+          <button class="question_button" onclick="exchange_Text_2()">
+            Click Me
+          </button>
+        </p>
+      </div>
+      <div class="para">
+        <p id="para_4">
+          Image
+          <button class="question_button" onclick="get_image()">
+            Click Me
+          </button>
+          <img
+            id="image_tada"
+            src="https://media.tenor.com/9LmnPgcizMwAAAAi/done-tada.gif"
+            alt="Funny"
+          />
+          <button class="question_button" onclick="change_image()">
+            Change Image
+          </button>
+        </p>
+      </div>
+      <div class="para">
+        <img src="images/image1.jpg" alt="Gallery" id="imageSlider" />
+        <div>
+          <button class="prev" id="prev" onclick="prevImage()">Prev</button>
+          <button class="next" id="next" onclick="nextImage()">Next</button>
+        </div>
+      </div>
+      <div class="para">
+        <form onsubmit="return validateForm();">
+            <label for="fname">First name:</label><br />
+          <input type="text" id="fname" /><br />
+          <label for="lname">Last name:</label><br />
+          <input type="text" id="lname"/><br /><br />
+          <input type="radio" class="gender"  />
+          <label for="fname">Male</label>
+          <input type="radio" class="gender"  />
+          <label for="fname">Female</label><br/>
+          <p><input type="checkbox" id="terms" /> I accept terms and conditions</p>
+          <p><input type="submit" value="Submit" /></p>
+        </form>
+      </div>
+    </div>
+    <script src="dom.js"></script>
+  </body>
+</html>

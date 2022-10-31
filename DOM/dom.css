@@ -1,0 +1,51 @@
+body {
+background-image: url("https://i.gifer.com/T7zX.gif");
+background-size: cover;
+    /* background-image: url("https://data.whicdn.com/images/219137792/original.gif"); */
+}
+.container {
+  padding: 2%;
+}
+.para {
+  padding: 5%;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 2%;
+  text-align: center;
+  background-color: rgba(221, 175, 175, 0.582);
+  border-radius: 3px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  color: rgb(94, 92, 92);
+  font-size: larger;
+  font-weight: bold;
+}
+.question_button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 2%;
+  border-radius: 16px;
+  border-color: transparent;
+  padding: 2%;
+  background-color: rgb(94, 92, 92);
+  color: whitesmoke;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.input_box{
+    margin-top: 2%;
+}
+
+#image_tada{
+    display: block;
+    margin: 0 auto;
+    margin-top: 2%;
+}
+
+#imageSlider{
+    margin: 0 auto;
+    height: 400px;
+    width: 400px;
+}
